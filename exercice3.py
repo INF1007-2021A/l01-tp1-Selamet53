@@ -1,6 +1,7 @@
 
 def decomposer(secondes):
 
+
     # TODO: Assigner à la variable "annees" le nombre d'années
     annees = secondes/(60*60*24*365)
 

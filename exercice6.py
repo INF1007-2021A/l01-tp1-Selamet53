@@ -1,3 +1,5 @@
+import cmath
+
 import matplotlib.pyplot as plt
 import math
 import numpy as np
@@ -14,23 +16,24 @@ def trouverModule(nombreComplexe):
 
 
 
-def effectuerRotation(nombreComplexe, rotation, trouverModule):
+def effectuerRotation(nombreComplexe, angle_rotation, trouverModule):
 
     module = trouverModule(nombreComplexe)
     angle = trouverAngle(nombreComplexe)
 
     # TODO: Afficher le module et l'angle du nombre complexe (3 decimales de précision)
-    print(round(module,3),round(angle,3))
+    print("Le module du nombre complexe est: ",round(module,3),"  L'angle du nombre complexe en degrés est: ",round(angle,3))
 
     # TODO: Calculer le nouveau nombre complexe après rotation, assigner le nouveau nombre complexe à la variable 'resultat'
-    i=complex(0,1)
-    resultat =nombreComplexe*(math.cos(rotation)+math.sin(rotation)*i)
+    angle_rotation=rotation*(cmath.pi/180)
+    resultat =nombreComplexe*(math.cos(angle_rotation)+math.sin(angle_rotation)*1j)
+
 
     nouveauModule = trouverModule(resultat)
     nouvelAngle = trouverAngle(resultat)
 
     # TODO : Afficher le nouveau module et le nouvel angle du nombre complexe après rotation (3 decimales de précision)
-    print(round(nouveauModule,3),round(nouvelAngle,3))
+    print("Le nouveau module est: ",round(nouveauModule,3),"  Le nouvel angle en degrés est: ",round(nouvelAngle,3))
     return resultat
 
 

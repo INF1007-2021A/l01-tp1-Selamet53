@@ -1,6 +1,7 @@
 import math
 
 
+
 def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
     # TODO faites les calculs intermediaires, vous pouvez initialiser des variables locales.
     vitesseInitiale_m=vitesseInitiale*(1000/3600)

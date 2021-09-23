@@ -2,6 +2,7 @@ def fizzBuzz(n):
     # TODO imprimer la chaine de caractère appropriée avec la fonction print().
     #  Assigner ensuite la valeur à la variable resultat
 
+
     if n%3==0 and n%5==0:
         return "fizzbuzz"
     elif n%3==0:
@@ -9,7 +10,7 @@ def fizzBuzz(n):
     elif n%5==0:
         return "buzz"
     else:
-        return "n'est un multiple de 3 et/ou 5"
+        return "n'est pas un multiple de 3 et/ou 5"
     resultat = fizzBuzz(n)
     return resultat
 
