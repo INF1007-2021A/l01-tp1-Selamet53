@@ -10,12 +10,10 @@ def fizzBuzz(n):
     elif n%5==0:
         return "buzz"
     else:
-        return "n'est pas un multiple de 3 et/ou 5"
-    resultat = fizzBuzz(n)
-    return resultat
+        return f"{n} nest pas un multiple de 3 et/ou de 5"
 
 if __name__ == '__main__':
     n = int(input("indiquez le nombre: "))
-    print(fizzBuzz(n),", Le nombre choisi est: ",n)
+    print(fizzBuzz(n))
 
 

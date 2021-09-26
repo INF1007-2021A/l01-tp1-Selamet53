@@ -25,7 +25,7 @@ def resoudreEquation(a, b, c):
         print("Une seule racine")
 
         # TODO: assigner a la variable x1 la valeur de la racine
-        x1 = (-b+ math.sqrt(delta))/(2*a)
+        x1 = -b/(2*a)
         # ne pas modifier
         return x1
 
